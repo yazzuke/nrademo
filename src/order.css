@@ -7,8 +7,8 @@
 
 .order-page {
     position: relative;
-    width: 1080px;
-    height: 600px;
+    width: 1089px;
+    height: 478px;
     background-color: #000000;
     overflow: hidden;
 }
@@ -32,21 +32,21 @@
 .order-page h1 {
     font-family: "Head-Turn";
     font-weight: 300;
-    font-size: 70px;
+    font-size: 56px;
     color: #1D1D1B;
 }
 
 .order-page h2 {
     font-family: "GT-Walsheim-Pro";
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 8px;
 }
 
 .order-page h3 {
     font-family: "GT-Walsheim-Pro";
     font-weight: 700;
-    font-size: 38px;
+    font-size: 28px;
     color: #1D1D1B;
     letter-spacing: 5px;
 }
@@ -54,7 +54,7 @@
 .order-page h4 {
     font-family: "GT-Walsheim-Pro";
     font-weight: 500;
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: 1px;
 }
 
@@ -81,8 +81,8 @@
 }
 
 .order-page .top-container {
-    width: 1080px;
-    height: 225px;
+    width: 100%;
+    height: 178px;
     background-image: url(/order-assets/background-blur.jpg);
     z-index: 1;
     overflow: hidden;
@@ -90,8 +90,8 @@
 
 .order-page .top-container-background-blur {
     display: flex;
-    width: 1080px;
-    height: 225px;
+    width: 100%;
+    height: 178px;
     flex-direction: column;
     align-items: center;
     padding: 0px 0 5px 0px;
@@ -99,11 +99,11 @@
 
 .order-page .middle-container {
     position: relative;
-    width: 1024px;
-    height: 370px;
+    width: 1044px;
+    height: 292px;
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 14px;
     margin-left: 31px;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .order-page .orden-confirmation-title {
-    margin-top: 104px;
+    margin-top: 80px;
 }
 
 .order-page .orden-confirmation-title-below {
@@ -127,8 +127,8 @@
     display: flex;
     background: #F1F1F1;
     border-radius: 8px;
-    width: 1011px;
-    height: 60px;
+    width: 1030px;
+    height: 48px;
 }
 
 .order-page .col.title-1 {
@@ -185,20 +185,20 @@
 
 .order-page .container-rows {
     padding-left: 56px;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
 }
 
 .order-page .row.total-row {
     position: absolute;
-    top: 282px;
+    top: 220px;
 }
 
 .order-page .div-sep {
     position: absolute;
-    width: 1024px;
+    width: 1044px;
     height: 0px;
     border: 2px solid #000000;
-    top: 268px;
+    top: 206px;
 }
 
 .order-page .col.total-title {
@@ -213,9 +213,9 @@
 
 .order-page .drive-forward {
     position: absolute;
-    width: 230px;
-    height: 30px;
-    top: 325px;
+    width: 200px;
+    height: 26px;
+    top: 252px;
     right: 10px;
 }
 
