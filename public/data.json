@@ -1,0 +1,12 @@
+{
+  "products": [
+    { "name": "Gregory Coffee Shop" },
+    { "name": "Espresso" },
+    { "name": "Cappuccino" },
+    { "name": "Latte" },
+    { "name": "Americano" },
+    { "name": "Mocha" },
+    { "name": "Cold Brew" }
+  ],
+  "texts": "PRODUCTOS"
+}

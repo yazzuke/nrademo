@@ -1,0 +1,258 @@
+.left-page {
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+}
+
+.left-page.container-body {
+    padding-top: 35px;
+    padding-left: 71px;
+}
+
+.left-page h1 {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 110px;
+    color: #1D1D1B;
+    text-transform: uppercase;
+}
+
+.left-page h2 {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 64px;
+    margin-top: 39px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.left-page h3 {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 50.19px;
+    color: #1D1D1B;
+}
+
+.left-page h4 {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 34.31px;
+    letter-spacing: -0.6px;
+}
+
+.left-page p {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 400;
+    color: #1D1D1B;
+    font-size: 15.5965px;
+    line-height: 24px;
+}
+
+.left-page p.second-type-size {
+    font-size: 22.4153px;
+}
+
+.left-page p.third-type-size {
+    font-size: 25.3647px;
+    font-weight: bold;
+}
+
+.left-page h4.info-title-dark-spot { color: #ffffff; }
+.left-page p.info-size-dark-spot { color: #ffffff; }
+.left-page p.second-type-size.calories-dark-spot { color: #ffffff; }
+.left-page p.third-type-size.price-dark-spot { color: #ffffff; }
+
+.left-page p.tanzania-letter-dark-spot {
+    font-family: "Head-Turn";
+    color: #EE5240;
+    font-weight: 400;
+    font-size: 33px;
+}
+
+.left-page p.description-content-dark-spot {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'GT-Walsheim-Pro-Thin';
+}
+
+.left-page p.info-description-letter {
+    font-weight: 600;
+    font-size: 23px;
+    font-family: 'GT-Walsheim-Pro-Thin';
+}
+
+.left-page h4.cold-bar-letter-tittle { font-size: 28.72px; }
+
+.left-page p.cold-bar-letter-description {
+    font-weight: 600;
+    font-size: 21px;
+    font-family: 'GT-Walsheim-Pro-Thin';
+}
+
+.left-page p.advancement-below {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'GT-Walsheim-Pro-Thin';
+}
+
+.left-page p.description-content {
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'GT-Walsheim-Pro-Thin';
+}
+
+.left-page .separator-line {
+    position: absolute;
+    width: 947.6px;
+    height: 0px;
+    border: 2px solid #1D1D1B;
+}
+
+.left-page .separator-line.top-line { margin-top: 17px; }
+.left-page .separator-line.bottom-line { margin-top: 19px; }
+.left-page .separator-line.bottom2-line { margin-top: 22px; }
+
+/* Separators inside middle section flow normally */
+.left-page .container-middle-content .separator-line {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+.left-page .left-content-column { width: 434.72px; height: 365.64px; }
+.left-page .right-content-column { width: 434.72px; height: 365.64px; }
+
+.left-page .content-top-container {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    padding-right: 72px;
+}
+
+.left-page .info-content-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 21px;
+}
+
+.left-page .info-title { width: 243px; height: 35px; overflow: hidden; }
+.left-page .info-size { width: 50px; height: 18px; overflow: hidden; }
+.left-page .info-calories { width: 90px; height: 26px; overflow: hidden; }
+.left-page .info-price {
+    width: 49px; height: 29px;
+    display: flex; justify-content: flex-end; overflow: hidden;
+}
+
+.left-page .info-title.two-spaces { height: 85px; }
+.left-page .info-content-container.two-top { align-items: center; }
+
+.left-page .info-content-container.description {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin-bottom: 0px;
+}
+
+.left-page .info-content-container-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.left-page .info-description { width: 340px; height: 58px; overflow: hidden; }
+
+.left-page .info-content-container.dark-spot {
+    padding-top: 12px;
+    width: 464.2px;
+    height: 133.1px;
+    background-color: #1D1D1B;
+    margin-left: -15px;
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 15px;
+}
+
+.left-page .top-content-dark-spot {
+    display: flex; align-items: flex-end; justify-content: flex-end;
+}
+
+.left-page .container-tanzania-letter-dark-spot { margin-top: 4px; }
+.left-page .container-description-content-dark-spot { margin-top: 8px; }
+.left-page .container-top-content { height: 591px; }
+
+.left-page .container-middle-content {
+    padding-top: 52px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 72px;
+}
+
+.left-page .content-middle-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 72px;
+    height: 222px;
+}
+
+.left-page .info-description.middle {
+    width: 430px;
+    margin-top: 9px;
+    height: 46px;
+}
+
+.left-page .content-container {
+    display: flex;
+    padding-top: 18px;
+    justify-content: space-between;
+    padding-right: 72px;
+}
+
+.left-page .content-left-column { width: 434.72px; height: 115.64px; }
+.left-page .content-right-column { width: 434.72px; height: 115.64px; }
+.left-page .info-description-container { width: 393px; }
+
+.left-page .content-container-below {
+    padding-top: 22px;
+    width: 960px;
+    height: 585.9px;
+    background-image: url(/left-assets/Rec\ gris.jpg);
+}
+
+.left-page .section2-title {
+    margin-top: 24px;
+}
+
+.left-page .section2-title-below { margin-left: 84px; }
+
+.left-page .section-separator-below {
+    position: absolute;
+    width: 867.4px;
+    height: 0px;
+    margin-left: 91px;
+    margin-top: 17px;
+    border: 2px solid #1D1D1B;
+}
+
+.left-page .image-icon { width: 170px; height: 307px; margin-top: 22px; margin-left: 69px; }
+.left-page .image-icon.one { background-image: url(/left-assets/PROFFEE\ img.png); }
+.left-page .image-icon.two { background-image: url(/left-assets/salted\ caramel\ img.png); }
+.left-page .image-icon.three { background-image: url(/left-assets/nitro\ img\ 1.png); }
+
+.left-page .content-column1-below { margin-left: 42px; width: 285px; height: 444.33px; overflow: hidden; }
+.left-page .content-column2-below { margin-left: 19px; width: 270px; height: 409.33px; }
+.left-page .content-column3-below { margin-left: 19px; width: 270px; height: 409.33px; }
+.left-page .content-container-below2 { display: flex; }
+
+.left-page .content-title { text-align: center; margin-top: -6px; }
+.left-page .content-info-container-below { margin-top: 10px; display: flex; justify-content: center; }
+.left-page .content-description { text-align: center; height: 48px; }
+.left-page .column--size { margin-right: 4px; }
+.left-page .column--calories { margin-right: 4px; }
+
+.left-page .advancement { margin-top: 37px; width: 920px; height: 44px; }

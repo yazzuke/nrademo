@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Head-Turn";
+    src: url("/assets/fonts/font2/HeadTurn.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GT-Walsheim-Pro";
+    src: url("/assets/fonts/font1/GT-Walsheim-Pro-Condensed-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1.GT-Walsheim-Pro {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 96px;
+    margin-top: -20px;
+}
+
+h1.second-middle-content-title {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 96px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+h2.GT-Walsheim-Pro {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 64px;
+    margin-top: 39px;
+}
+
+h4.GT-Walsheim-Pro {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 32px;
+}
+
+h1.head-turn {
+    font-family: "Head-Turn";
+    font-weight: 400;
+    font-size: 98px;
+    margin-left: 26px;
+    margin-top: 11px;
+}
+
+.body-content {
+    background-image: url(/assets/background.jpg);
+    background-repeat: no-repeat;
+    width: 1080px;
+    height: 1320px;
+    overflow: hidden;
+    padding-left: 23px;
+}
+
+.top-content {
+    height: 516px;
+}
+
+.middle-content {
+    display: flex;
+}
+
+.regtangle-svg {
+    background-image: url(/assets/rectangle.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 1042px;
+    height: 491px;
+    display: flex;
+    margin-top: 104px;
+    justify-content: center;
+}
+
+.regtangle-title {
+    position: absolute;
+    width: 484px;
+    height: 200px;
+    display: flex;
+    top: -117px;
+    left: 280px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.square-card {
+    width: 338px;
+    height: 284px;
+    margin-right: 13px;
+    border: 4px solid #000000;
+}
+
+.square-image-1 {
+    width: 331px;
+    height: 227px;
+    background-repeat: no-repeat;
+}
+
+.square-image-1#img-4 {
+    background-position: 15px;
+}
+
+.regtangle-image-0 {
+    width: 603px;
+    height: 401px;
+    margin-top: 79px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.square-image-5 {
+    width: 328px;
+    height: 188px;
+    background-repeat: no-repeat;
+}
+
+.square-title {
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 2px 0 2px;
+}
+
+.second-middle-content {
+    margin-left: 279px;
+    position: absolute;
+    margin-top: -8px;
+}
+
+.bottom-content {
+    display: flex;
+    margin-top: 101px;
+}
+
+.square-title-bottom {
+    width: 100%;
+    height: 89px;
+    overflow: hidden;
+    display: flex;
+    padding: 2px 57px 2px 57px;
+    text-align: center;
+}
+
+img.tray-seal {
+    width: 173px;
+    height: 173px;
+    position: absolute;
+    right: 54px;
+    top: -72px;
+}
+
+img.toast-seal {
+    width: 173px;
+    height: 173px;
+    position: absolute;
+    left: 48px;
+    top: -72px;
+}

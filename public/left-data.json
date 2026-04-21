@@ -1,0 +1,35 @@
+{
+  "products": [
+    { "name": "Latte", "size": "16oz.", "calories": 225, "units": "cals", "price": 4.90, "description": "", "tags": null },
+    { "name": "Cappuccino", "size": "12oz.", "calories": 180, "units": "cals", "price": 4.50, "description": "", "tags": null },
+    { "name": "Americano", "size": "12oz.", "calories": 15, "units": "cals", "price": 3.50, "description": "", "tags": null },
+    { "name": "Flat White", "size": "8oz.", "calories": 170, "units": "cals", "price": 4.75, "description": "", "tags": null },
+    { "name": "Cortado", "size": "4oz.", "calories": 90, "units": "cals", "price": 3.75, "description": "", "tags": null },
+    { "name": "Espresso Tonic", "size": "12oz.", "calories": 60, "units": "cals", "price": 5.00, "description": "Double shot espresso over tonic water with a hint of citrus.", "tags": null },
+    { "name": "Matcha Latte", "size": "12oz.", "calories": 200, "units": "cals", "price": 5.25, "description": "", "tags": "vegan" },
+    { "name": "Chai Latte", "size": "12oz.", "calories": 240, "units": "cals", "price": 4.75, "description": "", "tags": null },
+    { "name": "Mocha", "size": "16oz.", "calories": 395, "units": "cals", "price": 5.90, "description": "", "tags": null },
+    { "name": "Hot Chocolate", "size": "12oz.", "calories": 310, "units": "cals", "price": 4.25, "description": "", "tags": null },
+    { "name": "Turmeric Latte", "size": "12oz.", "calories": 190, "units": "cals", "price": 5.00, "description": "", "tags": "vegan" },
+    { "name": "Tanzania Single Origin", "size": "12oz.", "calories": 5, "units": "cals", "price": 5.50, "description": "Bold and fruity notes of blackcurrant and tamarind from the Mbeya region.", "tags": null },
+    { "name": "Pour Over", "size": "10oz.", "calories": 5, "units": "cals", "price": 5.00, "description": "Delicate and clean with bright floral notes.", "tags": null },
+    { "name": "French Press", "size": "16oz.", "calories": 10, "units": "cals", "price": 4.50, "description": "Full body and rich texture, steeped for 4 minutes.", "tags": null },
+    { "name": "AeroPress", "size": "8oz.", "calories": 5, "units": "cals", "price": 4.75, "description": "Smooth and concentrated with low acidity.", "tags": null },
+    { "name": "Siphon Brew", "size": "8oz.", "calories": 5, "units": "cals", "price": 6.00, "description": "Theater in a cup — vacuum brewed for a crystal clear result.", "tags": null },
+    { "name": "Cold Brew Classic", "size": "16oz.", "calories": 20, "units": "cals", "price": 5.00, "description": "Steeped 18 hours for a smooth, low-acid finish.", "tags": null },
+    { "name": "Cold Brew Tonic", "size": "16oz.", "calories": 35, "units": "cals", "price": 5.50, "description": "Cold brew over sparkling tonic with orange zest.", "tags": null },
+    { "name": "Nitro Cold Brew", "size": "14oz.", "calories": 25, "units": "cals", "price": 6.00, "description": "Nitrogen-infused for a creamy, velvety texture.", "tags": null }
+  ],
+  "texts": [
+    "Coffee Bar",
+    "Tanzania",
+    "Brew",
+    "Seasonal",
+    "Better Halfs",
+    "Elderberry hibiscus, mint green, black",
+    "Matcha Lemonade",
+    "Ceremonial grade matcha combined with lemonade",
+    "Cold Bar",
+    "Served fresh daily — ask your barista"
+  ]
+}

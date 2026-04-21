@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "GT-Walsheim-Pro-Thin";
+    src: url("/assets/fonts/font1/GTWalsheimPro-Thin.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.order-page {
+    position: relative;
+    width: 1080px;
+    height: 600px;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.order-page .video-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 1;
+    transition: opacity 1.2s ease;
+}
+
+.order-page .video-layer.hidden {
+    opacity: 0;
+}
+
+.order-page h1 {
+    font-family: "Head-Turn";
+    font-weight: 300;
+    font-size: 70px;
+    color: #1D1D1B;
+}
+
+.order-page h2 {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 8px;
+}
+
+.order-page h3 {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 700;
+    font-size: 38px;
+    color: #1D1D1B;
+    letter-spacing: 5px;
+}
+
+.order-page h4 {
+    font-family: "GT-Walsheim-Pro";
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.order-page h4.text-rows-total-title {
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.order-page h4.text-rows-total-price {
+    font-weight: 700;
+}
+
+.order-page .body-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    background-color: #ffffff;
+}
+
+.order-page .top-container {
+    width: 1080px;
+    height: 225px;
+    background-image: url(/order-assets/background-blur.jpg);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.order-page .top-container-background-blur {
+    display: flex;
+    width: 1080px;
+    height: 225px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0 5px 0px;
+}
+
+.order-page .middle-container {
+    position: relative;
+    width: 1024px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: 31px;
+}
+
+.order-page h1.confirmation-title-below {
+    color: #ffffff;
+}
+
+.order-page h2.confirmation-title {
+    color: #ffffff;
+}
+
+.order-page .orden-confirmation-title {
+    margin-top: 104px;
+}
+
+.order-page .orden-confirmation-title-below {
+    margin-top: -25px;
+}
+
+.order-page .row.title-row {
+    display: flex;
+    background: #F1F1F1;
+    border-radius: 8px;
+    width: 1011px;
+    height: 60px;
+}
+
+.order-page .col.title-1 {
+    padding-left: 60px;
+    width: 452px;
+    padding-top: 7px;
+}
+
+.order-page .col.title-2 {
+    width: 163px;
+    text-align: end;
+    padding-top: 7px;
+}
+
+.order-page .col.title-3 {
+    width: 169px;
+    text-align: end;
+    padding-top: 7px;
+}
+
+.order-page .col.title-4 {
+    width: 174px;
+    text-align: end;
+    padding-top: 7px;
+}
+
+.order-page .row {
+    display: flex;
+}
+
+.order-page .col.item-1 {
+    width: 389px;
+}
+
+.order-page .col.item-2 {
+    width: 140px;
+    text-align: end;
+}
+
+.order-page .col.item-3 {
+    width: 177px;
+    text-align: end;
+}
+
+.order-page .col.item-4 {
+    width: 175px;
+    text-align: end;
+}
+
+.order-page .table-container {
+    width: 100%;
+    height: 100%;
+}
+
+.order-page .container-rows {
+    padding-left: 56px;
+    margin: 20px 0 20px 0;
+}
+
+.order-page .row.total-row {
+    position: absolute;
+    top: 282px;
+}
+
+.order-page .div-sep {
+    position: absolute;
+    width: 1024px;
+    height: 0px;
+    border: 2px solid #000000;
+    top: 268px;
+}
+
+.order-page .col.total-title {
+    padding-left: 56px;
+}
+
+.order-page .col.total-price {
+    width: 144px;
+    margin-left: 659px;
+    text-align: end;
+}
+
+.order-page .drive-forward {
+    position: absolute;
+    width: 230px;
+    height: 30px;
+    top: 325px;
+    right: 10px;
+}
+
+.order-page img.drive {
+    width: 100%;
+    height: auto;
+}
+
+.order-page .fade-in {
+    animation: order-fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes order-fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.order-page .fade-out {
+    animation: order-fade-out 1s ease-out both;
+}
+
+@keyframes order-fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
