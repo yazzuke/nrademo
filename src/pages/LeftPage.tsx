@@ -5,7 +5,7 @@ import '../left.css'
 export function LeftPage() {
   const { data, error } = useLeftData()
 
-  if (error) return <p style={{ color: 'red', padding: '1rem' }}>Error: {error}</p>
+  if (error && !data) return <p style={{ color: 'red', padding: '1rem' }}>Error: {error}</p>
   if (!data) return null
 
   const p = data.products
