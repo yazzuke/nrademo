@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import type { LeftData, LeftProduct } from '../types'
 
-const API_URL = 'http://localhost:8080/api/toast/menus-simple'
+const API_URL = 'https://toastorderseyc.zeabur.app/api/toast/menus-simple'
 const REFRESH_INTERVAL = 5_000
 const TARGET_MENU = 'BEVERAGES'
 
