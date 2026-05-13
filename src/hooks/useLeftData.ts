@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import type { LeftData, LeftProduct } from '../types'
 
 const API_URL = 'https://toastorderseyc.zeabur.app/api/toast/menus-simple'
-const REFRESH_INTERVAL = 5_000
+const REFRESH_INTERVAL = 30_000
 const TARGET_MENU = 'BEVERAGES'
 
 interface ToastItem {
@@ -107,8 +107,11 @@ function mapToLeftData(menus: ToastMenu[]): LeftData {
   return { products, texts }
 }
 
+// Module-level cache — survives re-renders, keeps last good data on API errors
+let cachedData: LeftData | null = null
+
 export function useLeftData() {
-  const [data, setData] = useState<LeftData | null>(null)
+  const [data, setData] = useState<LeftData | null>(cachedData)
   const [error, setError] = useState<string | null>(null)
 
   const fetchData = async () => {
@@ -117,11 +120,14 @@ export function useLeftData() {
       const response = await fetch(API_URL)
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
       const json: ToastMenu[] = await response.json()
-      setData(mapToLeftData(json))
+      const mapped = mapToLeftData(json)
+      cachedData = mapped
+      setData(mapped)
       setError(null)
     } catch (err) {
       const msg = err instanceof Error ? err.message : 'Error desconocido'
       console.error('[useLeftData] Failed:', msg)
+      // Keep existing data visible — only update the error indicator
       setError(msg)
     }
   }
