@@ -11,6 +11,7 @@
     height: 478px;
     background-color: #000000;
     overflow: hidden;
+    left: 10px;
 }
 
 .order-page .video-layer {
