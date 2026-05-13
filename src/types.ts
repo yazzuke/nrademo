@@ -53,6 +53,7 @@ export interface LeftProduct {
   price: number
   description: string
   tags: string | null
+  inStock?: boolean
 }
 
 export interface LeftData {

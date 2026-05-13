@@ -1,11 +1,11 @@
-import { useTemplateData } from '../hooks/useTemplateData'
+import { useMenuData } from '../hooks/useMenuData'
 import { TopSection } from '../components/TopSection'
 import { MiddleCards } from '../components/MiddleCards'
 import { BottomCards } from '../components/BottomCards'
 import '../styles.css'
 
 export function MenuPage() {
-  const { data, error } = useTemplateData()
+  const { data, error } = useMenuData()
 
   if (error) return <p style={{ color: 'red', padding: '1rem' }}>Error: {error}</p>
   if (!data) return null

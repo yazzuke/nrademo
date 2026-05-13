@@ -52,8 +52,8 @@ export function LeftPage() {
               <div className="info-content-container-top">
                 <div className="info-title"><h4 className="a">{p[12]?.name.toUpperCase()}</h4></div>
                 <div className="info-size"><p className="a">{p[12]?.size}</p></div>
-                <div className="info-calories"><p className="second-type-size">{p[12]?.calories} {p[12]?.units}</p></div>
-                <div className="info-price"><p className="third-type-size">{p[12]?.price.toFixed(2)}</p></div>
+                {(p[12]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[12]?.calories} {p[12]?.units}</p></div>}
+                <div className="info-price"><p className="third-type-size">{(p[12]?.price ?? 0).toFixed(2)}</p></div>
               </div>
               <div className="info-description middle">
                 <p className="description-content">{p[12]?.description}</p>
@@ -63,8 +63,8 @@ export function LeftPage() {
               <div className="info-content-container-top">
                 <div className="info-title"><h4 className="a">{p[13]?.name.toUpperCase()}</h4></div>
                 <div className="info-size"><p className="a">{p[13]?.size}</p></div>
-                <div className="info-calories"><p className="second-type-size">{p[13]?.calories} {p[13]?.units}</p></div>
-                <div className="info-price"><p className="third-type-size">{p[13]?.price.toFixed(2)}</p></div>
+                {(p[13]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[13]?.calories} {p[13]?.units}</p></div>}
+                <div className="info-price"><p className="third-type-size">{(p[13]?.price ?? 0).toFixed(2)}</p></div>
               </div>
               <div className="info-description middle">
                 <p className="description-content">{p[13]?.description}</p>
@@ -76,8 +76,8 @@ export function LeftPage() {
               <div className="info-content-container-top">
                 <div className="info-title"><h4 className="a">{p[14]?.name.toUpperCase()}</h4></div>
                 <div className="info-size"><p className="a">{p[14]?.size}</p></div>
-                <div className="info-calories"><p className="second-type-size">{p[14]?.calories} {p[14]?.units}</p></div>
-                <div className="info-price"><p className="third-type-size">{p[14]?.price.toFixed(2)}</p></div>
+                {(p[14]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[14]?.calories} {p[14]?.units}</p></div>}
+                <div className="info-price"><p className="third-type-size">{(p[14]?.price ?? 0).toFixed(2)}</p></div>
               </div>
               <div className="info-description middle">
                 <p className="description-content">{p[14]?.description}</p>
@@ -87,8 +87,8 @@ export function LeftPage() {
               <div className="info-content-container-top">
                 <div className="info-title"><h4 className="a">{p[15]?.name.toUpperCase()}</h4></div>
                 <div className="info-size"><p className="a">{p[15]?.size}</p></div>
-                <div className="info-calories"><p className="second-type-size">{p[15]?.calories} {p[15]?.units}</p></div>
-                <div className="info-price"><p className="third-type-size">{p[15]?.price.toFixed(2)}</p></div>
+                {(p[15]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[15]?.calories} {p[15]?.units}</p></div>}
+                <div className="info-price"><p className="third-type-size">{(p[15]?.price ?? 0).toFixed(2)}</p></div>
               </div>
               <div className="info-description middle">
                 <p className="description-content">{p[15]?.description}</p>
@@ -102,13 +102,19 @@ export function LeftPage() {
         <div className="content-container">
           <div className="content-left-column">
             <div className="content-info-container">
-              <div className="info-title-container"><h4 className="info-title-letter">{t[4]}</h4></div>
+              <div className="seasonal-title-row">
+                <h4 className="info-title-letter">{t[4]}</h4>
+                {t[10] && <p className="third-type-size seasonal-price">{t[10]}</p>}
+              </div>
               <div className="info-description-container"><p className="info-description-letter">{t[5]}</p></div>
             </div>
           </div>
           <div className="content-right-column">
             <div className="content-info-container">
-              <div className="info-title-container"><h4 className="info-title-letter">{t[6]}</h4></div>
+              <div className="seasonal-title-row">
+                <h4 className="info-title-letter">{t[6]}</h4>
+                {t[11] && <p className="third-type-size seasonal-price">{t[11]}</p>}
+              </div>
               <div className="info-description-container"><p className="info-description-letter">{t[7]}</p></div>
             </div>
           </div>
@@ -132,8 +138,8 @@ export function LeftPage() {
               </div>
               <div className="content-info-container-below">
                 <div className="column--size"><p className="a">{p[i]?.size}</p></div>
-                <div className="column--calories"><p className="second-type-size">{p[i]?.calories} {p[i]?.units}</p></div>
-                <div className="column--price"><p className="third-type-size">{p[i]?.price.toFixed(2)}</p></div>
+                {(p[i]?.calories ?? 0) > 0 && <div className="column--calories"><p className="second-type-size">{p[i]?.calories} {p[i]?.units}</p></div>}
+                <div className="column--price"><p className="third-type-size">{(p[i]?.price ?? 0).toFixed(2)}</p></div>
               </div>
             </div>
           ))}

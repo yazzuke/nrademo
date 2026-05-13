@@ -134,19 +134,20 @@
 .left-page .info-content-container {
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-bottom: 21px;
+    gap: 10px;
 }
 
-.left-page .info-title { width: 243px; height: 35px; overflow: hidden; }
-.left-page .info-size { width: 50px; height: 18px; overflow: hidden; }
-.left-page .info-calories { width: 90px; height: 26px; overflow: hidden; }
+.left-page .info-title { flex: 1; min-width: 0; height: 35px; overflow: hidden; }
+.left-page .info-size { flex-shrink: 0; width: 50px; height: 18px; overflow: hidden; }
+.left-page .info-calories { flex-shrink: 0; width: 90px; height: 26px; overflow: hidden; }
 .left-page .info-price {
-    width: 49px; height: 29px;
+    flex-shrink: 0; width: 49px; height: 29px;
     display: flex; justify-content: flex-end; overflow: hidden;
 }
 
-.left-page .info-title.two-spaces { height: 85px; }
+.left-page .info-title.two-spaces { height: 85px; flex: 1; min-width: 0; }
 .left-page .info-content-container.two-top { align-items: center; }
 
 .left-page .info-content-container.description {
@@ -159,10 +160,11 @@
 .left-page .info-content-container-top {
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
-.left-page .info-description { width: 340px; height: 58px; overflow: hidden; }
+.left-page .info-description { width: 100%; height: 58px; overflow: hidden; }
 
 .left-page .info-content-container.dark-spot {
     padding-top: 12px;
@@ -179,7 +181,7 @@
 }
 
 .left-page .top-content-dark-spot {
-    display: flex; align-items: flex-end; justify-content: flex-end;
+    display: flex; align-items: flex-end; justify-content: flex-start; gap: 10px; width: 100%;
 }
 
 .left-page .container-tanzania-letter-dark-spot { margin-top: 4px; }
@@ -254,5 +256,15 @@
 .left-page .content-description { text-align: center; height: 48px; }
 .left-page .column--size { margin-right: 4px; }
 .left-page .column--calories { margin-right: 4px; }
+
+.left-page .seasonal-title-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.left-page .seasonal-price {
+    flex-shrink: 0;
+}
 
 .left-page .advancement { margin-top: 37px; width: 920px; height: 44px; }
