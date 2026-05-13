@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import type { LeftData, LeftProduct } from '../types'
 
 const API_URL = 'https://toastorderseyc.zeabur.app/api/toast/menus-simple'
-const REFRESH_INTERVAL = 30_000
+const REFRESH_INTERVAL = 60_000
 const TARGET_MENU = 'BEVERAGES'
 
 interface ToastItem {
