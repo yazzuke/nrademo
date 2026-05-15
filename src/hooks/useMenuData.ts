@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import type { TemplateData } from '../types'
 
-//const API_BASE = 'https://toastorderseyc.zeabur.app/api/toast/menus-db'
-const API_BASE = 'http://localhost:8080/api/toast/menus-db'
+const API_BASE = 'https://toastorderseyc.zeabur.app/api/toast/menus-db'
+//const API_BASE = 'http://localhost:8080/api/toast/menus-db'
 const REFRESH_INTERVAL = 5_000
 
 interface ToastItem {

@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import type { ToastDisplayOrder, ToastResponse } from '../types'
 
-//const API_BASE = 'https://toastorderseyc.zeabur.app/api/toast/menus-db'
-const API_BASE = 'http://localhost:8080/api/toast/menus-db'
+const API_BASE = 'https://toastorderseyc.zeabur.app/api/toast/menus-db'
+//const API_BASE = 'http://localhost:8080/api/toast/menus-db'
 const POLL_INTERVAL = 5_000
 const DISPLAY_DURATION = 10_000
 

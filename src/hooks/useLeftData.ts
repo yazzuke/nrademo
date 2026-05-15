@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import type { LeftData, LeftProduct } from '../types'
 
-//const API_BASE = 'https://toastorderseyc.zeabur.app/api/toast/menus-db'
-const API_BASE = 'http://localhost:8080/api/toast/menus-db'
+const API_BASE = 'https://toastorderseyc.zeabur.app/api/toast/menus-db'
+//const API_BASE = 'http://localhost:8080/api/toast/menus-db'
 const REFRESH_INTERVAL = 60_000
 const TARGET_MENU = 'BEVERAGES ECN'
 
