@@ -1,17 +1,19 @@
 import { useState, useEffect } from 'react'
 import type { TemplateData } from '../types'
 
-const API_URL = 'https://toastorderseyc.zeabur.app/api/toast/menus-simple'
+//const API_BASE = 'https://toastorderseyc.zeabur.app/api/toast/menus-db'
+const API_BASE = 'http://localhost:8080/api/toast/menus-db'
 const REFRESH_INTERVAL = 5_000
 
 interface ToastItem {
   name: string
-  price: number
+  price: number | null
   guid: string
   description: string
   image: string | null
   stock: string
   quantity: number | null
+  inStock?: boolean
 }
 
 interface ToastGroup {
@@ -24,75 +26,55 @@ interface ToastMenu {
   groups: ToastGroup[]
 }
 
+function isInStock(item: ToastItem): boolean {
+  return item.inStock !== undefined
+    ? item.inStock
+    : (item.stock === 'IN_STOCK' || item.stock === 'QUANTITY')
+}
+
+const TARGET_GROUP = 'Desserts ECN'
+
 function mapToTemplateData(menus: ToastMenu[]): TemplateData {
-  const first = menus[0]
-
-  // Collect all IN_STOCK items from all groups
-  const allItems: ToastItem[] = []
-  for (const group of first.groups) {
-    for (const item of group.items) {
-      if (item.stock === 'IN_STOCK' || item.stock === 'QUANTITY') {
-        allItems.push(item)
-      }
-      if (allItems.length >= 7) break
-    }
-    if (allItems.length >= 7) break
+  // Find the Desserts ECN group across all menus
+  let targetGroup: ToastGroup | undefined
+  for (const menu of menus) {
+    targetGroup = menu.groups.find(g => g.group === TARGET_GROUP)
+    if (targetGroup) break
   }
 
-  // Pad to 7 if not enough in-stock items
-  const fallbackItems: ToastItem[] = []
-  if (allItems.length < 7) {
-    for (const group of first.groups) {
-      for (const item of group.items) {
-        if (!allItems.find(i => i.guid === item.guid)) {
-          fallbackItems.push(item)
-        }
-        if (allItems.length + fallbackItems.length >= 7) break
-      }
-      if (allItems.length + fallbackItems.length >= 7) break
-    }
+  if (!targetGroup) {
+    console.warn(`[useMenuData] Group "${TARGET_GROUP}" not found. Available:`,
+      menus.flatMap(m => m.groups.map(g => g.group)))
+    targetGroup = menus[0]?.groups[0]
   }
 
-  const products = [...allItems, ...fallbackItems].slice(0, 7).map(item => ({
+  const products = (targetGroup?.items ?? []).map(item => ({
     name: item.name,
+    guid: item.guid,
+    price: item.price ?? 0,
+    inStock: isInStock(item),
+    image: item.image ?? null,
   }))
-
-  // Pad to 7 if somehow still short
-  while (products.length < 7) {
-    products.push({ name: '' })
-  }
 
   return {
     products,
-    texts: first.menu,
+    texts: targetGroup?.group ?? TARGET_GROUP,
   }
 }
 
+let cachedData: TemplateData | null = null
+
 export function useMenuData() {
-  const [data, setData] = useState<TemplateData | null>(null)
+  const [data, setData] = useState<TemplateData | null>(cachedData)
   const [error, setError] = useState<string | null>(null)
 
   const fetchData = async () => {
     try {
-      console.log('[useMenuData] Fetching:', API_URL)
-      const response = await fetch(API_URL)
+      const response = await fetch(API_BASE)
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
       const json: ToastMenu[] = await response.json()
-
-      console.group('[useMenuData] API response')
-      console.log('Menus:', json.map(m => m.menu))
-      json.forEach(menu => {
-        console.group(`Menu: ${menu.menu}`)
-        menu.groups.forEach(g => {
-          console.log(`  ${g.group} (${g.items.length} items):`, g.items.map(i => `${i.name} [${i.stock}]`))
-        })
-        console.groupEnd()
-      })
-      console.groupEnd()
-
       const mapped = mapToTemplateData(json)
-      console.log('[useMenuData] Mapped →', { texts: mapped.texts, products: mapped.products.map(p => p.name) })
-
+      cachedData = mapped
       setData(mapped)
       setError(null)
     } catch (err) {

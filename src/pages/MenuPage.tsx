@@ -1,27 +1,30 @@
 import { useMenuData } from '../hooks/useMenuData'
-import { TopSection } from '../components/TopSection'
-import { MiddleCards } from '../components/MiddleCards'
-import { BottomCards } from '../components/BottomCards'
+import { SquareCard } from '../components/SquareCard'
 import '../styles.css'
 
 export function MenuPage() {
   const { data, error } = useMenuData()
 
-  if (error) return <p style={{ color: 'red', padding: '1rem' }}>Error: {error}</p>
+  if (error && !data) return <p style={{ color: 'red', padding: '1rem' }}>Error: {error}</p>
   if (!data) return null
-
-  const [hero, ...rest] = data.products
-  const middleProducts = rest.slice(0, 3)
-  const bottomProducts = rest.slice(3, 6)
 
   return (
     <div className="body-content">
-      <TopSection name={hero.name} />
-      <MiddleCards products={middleProducts} />
-      <div className="second-middle-content">
+      <div className="menu-header">
+        <img src="/assets/toast-seal.png" alt="Toast" className="menu-toast-seal" />
         <h1 className="second-middle-content-title">{data.texts}</h1>
       </div>
-      <BottomCards products={bottomProducts} />
+      <div className="cards-wrapper">
+        {data.products.slice(0, 9).map((product, i) => (
+          <SquareCard
+            key={product.guid ?? i}
+            imageUrl={`/assets/img-${((i + 1) % 7) + 1}.png`}
+            title={product.name.toUpperCase()}
+            price={product.price}
+            inStock={product.inStock}
+          />
+        ))}
+      </div>
     </div>
   )
 }

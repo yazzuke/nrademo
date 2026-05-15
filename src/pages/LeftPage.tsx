@@ -30,14 +30,15 @@ export function LeftPage() {
             <ProductRow product={p[4]} />
             <ProductRow product={p[5]} variant="description" />
           </div>
-          {/* Right column: items 6-11 */}
+          {/* Right column: items 6-12 */}
           <div className="right-content-column">
             <ProductRow product={p[6]} />
             <ProductRow product={p[7]} />
-            <ProductRow product={p[8]} variant="two-top" />
+            <ProductRow product={p[8]} />
             <ProductRow product={p[9]} />
             <ProductRow product={p[10]} />
-            <ProductRow product={p[11]} variant="dark-spot" tanzaniaText={t[1]} />
+            <ProductRow product={p[11]} />
+            <ProductRow product={p[12]} variant="dark-spot" tanzaniaText={t[1]} />
           </div>
         </div>
       </div>
@@ -50,48 +51,48 @@ export function LeftPage() {
           <div className="left-content-column">
             <div className="info-content-container description">
               <div className="info-content-container-top">
-                <div className="info-title"><h4 className="a">{p[12]?.name.toUpperCase()}</h4></div>
-                <div className="info-size"><p className="a">{p[12]?.size}</p></div>
-                {(p[12]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[12]?.calories} {p[12]?.units}</p></div>}
-                <div className="info-price"><p className="third-type-size">{(p[12]?.price ?? 0).toFixed(2)}</p></div>
+                <div className="info-title"><h4 className="a">{p[13]?.name.toUpperCase()}</h4></div>
+                <div className="info-size"><p className="a">{p[13]?.size}</p></div>
+                {(p[13]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[13]?.calories} {p[13]?.units}</p></div>}
+                <div className="info-price"><p className="third-type-size">{'$' + (p[13]?.price ?? 0).toFixed(2)}</p></div>
               </div>
               <div className="info-description middle">
-                <p className="description-content">{p[12]?.description}</p>
+                <p className="description-content">{p[13]?.description}</p>
               </div>
             </div>
             <div className="info-content-container description">
               <div className="info-content-container-top">
-                <div className="info-title"><h4 className="a">{p[13]?.name.toUpperCase()}</h4></div>
-                <div className="info-size"><p className="a">{p[13]?.size}</p></div>
-                {(p[13]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[13]?.calories} {p[13]?.units}</p></div>}
-                <div className="info-price"><p className="third-type-size">{(p[13]?.price ?? 0).toFixed(2)}</p></div>
+                <div className="info-title"><h4 className="a">{p[14]?.name.toUpperCase()}</h4></div>
+                <div className="info-size"><p className="a">{p[14]?.size}</p></div>
+                {(p[14]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[14]?.calories} {p[14]?.units}</p></div>}
+                <div className="info-price"><p className="third-type-size">{'$' + (p[14]?.price ?? 0).toFixed(2)}</p></div>
               </div>
               <div className="info-description middle">
-                <p className="description-content">{p[13]?.description}</p>
+                <p className="description-content">{p[14]?.description}</p>
               </div>
             </div>
           </div>
           <div className="right-content-column">
             <div className="info-content-container description">
               <div className="info-content-container-top">
-                <div className="info-title"><h4 className="a">{p[14]?.name.toUpperCase()}</h4></div>
-                <div className="info-size"><p className="a">{p[14]?.size}</p></div>
-                {(p[14]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[14]?.calories} {p[14]?.units}</p></div>}
-                <div className="info-price"><p className="third-type-size">{(p[14]?.price ?? 0).toFixed(2)}</p></div>
+                <div className="info-title"><h4 className="a">{p[15]?.name.toUpperCase()}</h4></div>
+                <div className="info-size"><p className="a">{p[15]?.size}</p></div>
+                {(p[15]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[15]?.calories} {p[15]?.units}</p></div>}
+                <div className="info-price"><p className="third-type-size">{'$' + (p[15]?.price ?? 0).toFixed(2)}</p></div>
               </div>
               <div className="info-description middle">
-                <p className="description-content">{p[14]?.description}</p>
+                <p className="description-content">{p[15]?.description}</p>
               </div>
             </div>
             <div className="info-content-container description">
               <div className="info-content-container-top">
-                <div className="info-title"><h4 className="a">{p[15]?.name.toUpperCase()}</h4></div>
-                <div className="info-size"><p className="a">{p[15]?.size}</p></div>
-                {(p[15]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[15]?.calories} {p[15]?.units}</p></div>}
-                <div className="info-price"><p className="third-type-size">{(p[15]?.price ?? 0).toFixed(2)}</p></div>
+                <div className="info-title"><h4 className="a">{p[16]?.name.toUpperCase()}</h4></div>
+                <div className="info-size"><p className="a">{p[16]?.size}</p></div>
+                {(p[16]?.calories ?? 0) > 0 && <div className="info-calories"><p className="second-type-size">{p[16]?.calories} {p[16]?.units}</p></div>}
+                <div className="info-price"><p className="third-type-size">{'$' + (p[16]?.price ?? 0).toFixed(2)}</p></div>
               </div>
               <div className="info-description middle">
-                <p className="description-content">{p[15]?.description}</p>
+                <p className="description-content">{p[16]?.description}</p>
               </div>
             </div>
           </div>
@@ -127,7 +128,7 @@ export function LeftPage() {
         <div className="section2-title-below"><h2 className="a">{t[8]}</h2></div>
         <div className="section-separator-below" />
         <div className="content-container-below2">
-          {[16, 17, 18].map((i, col) => (
+          {[17, 18, 19].map((i, col) => (
             <div key={i} className={`content-column${col + 1}-below`}>
               <div className={`image-icon ${['one', 'two', 'three'][col]}`} />
               <div className="content-title">
@@ -139,7 +140,7 @@ export function LeftPage() {
               <div className="content-info-container-below">
                 <div className="column--size"><p className="a">{p[i]?.size}</p></div>
                 {(p[i]?.calories ?? 0) > 0 && <div className="column--calories"><p className="second-type-size">{p[i]?.calories} {p[i]?.units}</p></div>}
-                <div className="column--price"><p className="third-type-size">{(p[i]?.price ?? 0).toFixed(2)}</p></div>
+                <div className="column--price"><p className="third-type-size">{'$' + (p[i]?.price ?? 0).toFixed(2)}</p></div>
               </div>
             </div>
           ))}

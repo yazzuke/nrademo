@@ -12,7 +12,6 @@ export function TopSection({ name }: Props) {
     <div className="top-content">
       <div className="regtangle-svg">
         <img src="/assets/toast-seal.png" alt="" className="toast-seal" />
-        <img src="/assets/tray-seal.png" alt="" className="tray-seal" />
         <div className="regtangle-title">
           <h2 className="GT-Walsheim-Pro">{word1}</h2>
           <h1 className="head-turn">{word2}</h1>

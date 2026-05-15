@@ -14,6 +14,8 @@ export function MiddleCards({ products }: Props) {
           imageIndex={i + 2}
           title={product.name.toUpperCase()}
           variant="middle"
+          price={product.price}
+          inStock={product.inStock}
         />
       ))}
     </div>

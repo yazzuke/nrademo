@@ -1,5 +1,9 @@
 export interface Product {
   name: string
+  price?: number
+  inStock?: boolean
+  image?: string | null
+  guid?: string
 }
 
 export interface TemplateData {

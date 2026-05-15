@@ -26,17 +26,12 @@ export function ProductRow({ product, variant = 'default', tanzaniaText }: Props
     return (
       <div className="left-page info-content-container dark-spot">
         <div className="top-content-dark-spot">
-          <div className="info-title"><h4 className="info-title-dark-spot">{titleContent}</h4></div>
+          <div className="info-title"><p className="tanzania-letter-dark-spot">{tanzaniaText}</p></div>
           <div className="info-size"><p className="info-size-dark-spot">{product.size}</p></div>
           {product.calories > 0 && <div className="info-calories"><p className="second-type-size calories-dark-spot">{product.calories} {product.units}</p></div>}
-          <div className="info-price"><p className="third-type-size price-dark-spot">{(product.price ?? 0).toFixed(2)}</p></div>
+          <div className="info-price"><p className="third-type-size price-dark-spot">{'$' + (product.price ?? 0).toFixed(2)}</p></div>
         </div>
         <div className="description-dark-spot">
-          {tanzaniaText && (
-            <div className="container-tanzania-letter-dark-spot">
-              <p className="tanzania-letter-dark-spot">{tanzaniaText}</p>
-            </div>
-          )}
           <div className="container-description-content-dark-spot">
             <p className="description-content-dark-spot">{product.description}</p>
           </div>
@@ -52,7 +47,7 @@ export function ProductRow({ product, variant = 'default', tanzaniaText }: Props
           <div className="info-title"><h4 className="a">{titleContent}</h4></div>
           <div className="info-size"><p className="a">{product.size}</p></div>
           {product.calories > 0 && <div className="info-calories"><p className="second-type-size">{product.calories} {product.units}</p></div>}
-          <div className="info-price"><p className="third-type-size">{(product.price ?? 0).toFixed(2)}</p></div>
+          <div className="info-price"><p className="third-type-size">{'$' + (product.price ?? 0).toFixed(2)}</p></div>
         </div>
         <div className="info-description">
           <p className="description-content">{product.description}</p>
@@ -70,7 +65,7 @@ export function ProductRow({ product, variant = 'default', tanzaniaText }: Props
         </div>
         <div className="info-size"><p className="a">{product.size}</p></div>
         {product.calories > 0 && <div className="info-calories"><p className="second-type-size">{product.calories} {product.units}</p></div>}
-        <div className="info-price"><p className="third-type-size">{(product.price ?? 0).toFixed(2)}</p></div>
+        <div className="info-price"><p className="third-type-size">{'$' + (product.price ?? 0).toFixed(2)}</p></div>
       </div>
     )
   }
@@ -83,7 +78,7 @@ export function ProductRow({ product, variant = 'default', tanzaniaText }: Props
       </div>
       <div className="info-size"><p className="a">{product.size}</p></div>
       {product.calories > 0 && <div className="info-calories"><p className="second-type-size">{product.calories} {product.units}</p></div>}
-      <div className="info-price"><p className="third-type-size">{(product.price ?? 0).toFixed(2)}</p></div>
+      <div className="info-price"><p className="third-type-size">{'$' + (product.price ?? 0).toFixed(2)}</p></div>
     </div>
   )
 }

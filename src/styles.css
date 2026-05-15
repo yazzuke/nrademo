@@ -57,18 +57,21 @@ h1.head-turn {
 .body-content {
     background-image: url(/assets/background.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     width: 1084px;
     height: 1441px;
     overflow: hidden;
-    padding-left: 23px;
+    padding: 0 22px;
 }
 
 .top-content {
     height: 516px;
+    overflow: hidden;
 }
 
 .middle-content {
     display: flex;
+    gap: 18px;
 }
 
 .regtangle-svg {
@@ -96,15 +99,17 @@ h1.head-turn {
 }
 
 .square-card {
-    width: 338px;
-    height: 284px;
-    margin-right: 13px;
+    flex: 1;
     border: 4px solid #000000;
+    background-color: white;
+    overflow: hidden;
 }
 
 .square-image-1 {
-    width: 331px;
-    height: 227px;
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -121,37 +126,61 @@ h1.head-turn {
 }
 
 .square-image-5 {
-    width: 328px;
-    height: 188px;
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .square-title {
     width: 100%;
-    height: 44px;
-    overflow: hidden;
+    min-height: 72px;
+    overflow: visible;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 2px 0 2px;
+    padding: 10px 8px;
 }
 
-.second-middle-content {
-    margin-left: 279px;
+.menu-header {
+    position: relative;
+    text-align: center;
+    padding: 60px 0 36px;
+    border-bottom: 4px solid #000;
+    margin-bottom: 28px;
+}
+
+.menu-toast-seal {
     position: absolute;
-    margin-top: -8px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 120px;
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
 }
 
 .bottom-content {
     display: flex;
-    margin-top: 101px;
+    gap: 18px;
 }
 
 .square-title-bottom {
     width: 100%;
-    height: 89px;
-    overflow: hidden;
+    min-height: 72px;
+    overflow: visible;
     display: flex;
-    padding: 2px 57px 2px 57px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px;
     text-align: center;
 }
 

@@ -14,6 +14,8 @@ export function BottomCards({ products }: Props) {
           imageIndex={i + 5}
           title={product.name.toUpperCase()}
           variant="bottom"
+          price={product.price}
+          inStock={product.inStock}
         />
       ))}
     </div>
