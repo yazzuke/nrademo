@@ -1,3 +1,9 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 .left-page {
     width: 1080px;
     height: 1920px;
