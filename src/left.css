@@ -8,6 +8,7 @@
     width: 1080px;
     height: 1920px;
     overflow: hidden;
+    will-change: transform;
 }
 
 .left-page.container-body {

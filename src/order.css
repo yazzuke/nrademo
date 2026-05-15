@@ -18,6 +18,7 @@
     background-color: #000000;
     overflow: hidden;
     left: 0;
+    will-change: transform;
 }
 
 .order-page .video-layer {

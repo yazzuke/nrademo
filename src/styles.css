@@ -65,6 +65,7 @@ h1.head-turn {
     height: 1441px;
     overflow: hidden;
     padding: 0 22px;
+    will-change: transform;
 }
 
 .top-content {
