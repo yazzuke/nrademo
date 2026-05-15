@@ -11,9 +11,8 @@ export function MiddleCards({ products }: Props) {
       {products.map((product, i) => (
         <SquareCard
           key={i}
-          imageIndex={i + 2}
+          imageUrl={`/assets/img-${i + 2}.png`}
           title={product.name.toUpperCase()}
-          variant="middle"
           price={product.price}
           inStock={product.inStock}
         />
