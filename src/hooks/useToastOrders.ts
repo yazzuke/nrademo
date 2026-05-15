@@ -3,7 +3,7 @@ import type { ToastDisplayOrder, ToastResponse } from '../types'
 
 const API_BASE = 'https://toastorderseyc.zeabur.app/api/toast/ocb'
 const POLL_INTERVAL = 5_000
-const DISPLAY_DURATION = 10_000
+const DISPLAY_DURATION = 15_000
 
 function getBusinessDate(): string {
   const d = new Date()
