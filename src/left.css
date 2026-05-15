@@ -201,6 +201,7 @@
 .left-page .content-middle-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 18px;
     padding-right: 72px;
     height: 222px;
 }
