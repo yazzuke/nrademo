@@ -7,11 +7,11 @@
 
 .order-page {
     position: relative;
-    width: 1089px;
-    height: 478px;
+    width: 1074px;
+    height: 473px;
     background-color: #000000;
     overflow: hidden;
-    left: 10px;
+    left: 0;
 }
 
 .order-page .video-layer {
@@ -105,7 +105,7 @@
     display: flex;
     justify-content: center;
     padding-top: 14px;
-    margin-left: 31px;
+    margin-left: 15px;
 }
 
 .order-page h1.confirmation-title-below {
